@@ -8,10 +8,10 @@
     		margin: 0;
 		}
 
-		/* Class is used to fill in background with a dynamic image */ 
+		/* Class is used to fill in background with a dynamic image*/
 		html {
     		/* The image used */
-    		background-image: url("blue-bg.jpg");
+    		background-image: url("image goes here");
 
     		/* Full height */
     		height: 100%; 
@@ -22,22 +22,6 @@
     		background-size: cover;
 		}
 
-		/* Used to make all text white (for black backgrounds) 
-		h1, h2, p, ul, span {
-			color: white;
-		}*/
-
-		.self-info {
-			text-align: center;
-		}
-
-		.buttons {
-			text-align: center;
-			position: absolute;
-			top: 50%;
-			left: 45%;
-		}
-
 		ul {
 			text-align: center;
 		}
@@ -46,29 +30,65 @@
 			display: inline-block;
 		}
 
+		#welcome-info {
+			text-align: center;
+		}
+
+		#all-info {
+			border-style: solid;
+		}
+
+		#self-info {
+			position: relative;
+			border-style: solid;
+		}
+
+		.button {
+			background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 12px;
+		    margin: 4px 2px;
+		    border-radius: 70%;
+		}
+
+		.button1 {background-image: url();}
+		.button2 {}
+		.button3 {}
+
+		.button:hover {
+			background-color: black;
+		}
+
+
 		</style>
 
 	</head>
 
 	<body>
-	<div class="self-info">
-		<h1><b>Hello, Welcome to My Personal Website!</b></h1>
-		<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
+	<div id="all-info">
+		<div id="welcome-info">
+			<h1><b>Hello, Welcome to My Personal Website!</b></h1>
+			<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
 
-		<ul>
-			<li><b>School:</b> California Polytechnic State University, Pomona |</li>
-			<li><b>Major:</b> Computer Science |</li>
-			<li><b>Age:</b> 19 |</li>
-			<li><b>Email:</b> **********@gmail.com |</li>
-			<li><b>Phone:</b> (***)***-****</li>
-		</ul>
+			<ul id="self-info">
+				<li><b>School:</b> California Polytechnic State University, Pomona |</li>
+				<li><b>Major:</b> Computer Science |</li>
+				<li><b>Age:</b> 19 |</li>
+				<li><b>Email:</b> **********@gmail.com |</li>
+				<li><b>Phone:</b> (***)***-****</li>
+			</ul>
+		</div>
+
+		<div id="circle-buttons" style="text-align: center;">
+			<button class="button button1" onclick = "location.href = 'https://www.facebook.com/aaron.truong.10'">FaceBook</button>
+			<button class="button button2" onclick = "location.href = 'https://github.com/truongaaron'">GitHub</button>
+			<button class="button button3" onclick = "location.href = 'https://bitbucket.org/aarontruong/'">BitBucket</button>
+		</div>
 	</div>
-
-	<div class="buttons">
-		<button type="button" onclick = "location.href = 'https://www.facebook.com/aaron.truong.10'">FaceBook</button>
-		<button type="button" onclick = "location.href = 'https://github.com/truongaaron'">GitHub</button>
-		<button type="button" onclick = "location.href = 'https://bitbucket.org/aarontruong/'">BitBucket</button>
-	</div>
-
 	</body>
 </html>
