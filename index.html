@@ -2,110 +2,98 @@
 <html>
 	<head>
 		<style>
+			body, html {
+	   		 	height: 100%;
+	    		margin: 0;
+			}
 
-		body, html {
-   		 	height: 100%;
-    		margin: 0;
-		}
+			/* ul, li classes are used to line up info from a list */
+			ul {
+				text-align: center;
+			}
 
-		/* Class is used to fill in background with a dynamic image*/
-		html {
-    		/* The image used */
-    		background-image: url("image goes here");
+			li {
+				display: inline-block;
+			}
 
-    		/* Full height */
-    		height: 100%; 
+			#welcome-info {
+				text-align: center;
+			}
 
-    		/* Center and scale the image nicely */
-    		background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-		}
+			#all-info {
+				border-style: solid;
 
-		ul {
-			text-align: center;
-		}
+				/* fill background w/ image */
+				background-image: url("vector-white.jpg");
+	    		background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: cover;
+	    		box-sizing: border-box;
+			}
 
-		li {
-			display: inline-block;
-		}
+			#self-info {
+				border-style: solid;
+				background-color: pink;
+			}
 
-		#welcome-info {
-			text-align: center;
-		}
+			/* Positions the buttons vertically */
+			#circle-buttons {
+				text-align: center;
+				top: 50px;
+			}
 
-		#all-info {
-			height: 60%;
-			border-style: solid;
-		}
+			.button {
+				background-color: #4CAF50;
+			    border: none;
+			    border-radius: 70%;
+			    color: white;
+			    padding: 20px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 12px;
+			    margin: 4px 2px;
+			}
 
-		#self-info {
-			position: relative;
-			border-style: solid;
-		}
+			/*Images not scaled, but to be added*/
+			.button1 {background-image: url();}
+			.button2 {}
+			.button3 {}
 
-		/* Positions the buttons vertically */
-		#circle-buttons {
-			position: relative;
-			text-align: center;
-			top: 50px;
-		}
-
-		.button {
-			background-color: #4CAF50;
-		    border: none;
-		    border-radius: 70%;
-		    color: white;
-		    padding: 20px;
-		    text-align: center;
-		    text-decoration: none;
-		    display: inline-block;
-		    font-size: 12px;
-		    margin: 4px 2px;
-		}
-
-		/*Images not scaled, but to be added*/
-		.button1 {background-image: url();}
-		.button2 {}
-		.button3 {}
-
-		.button:hover {
-			background-color: black;
-		}
-
-
+			.button:hover {
+				background-color: black;
+			}
 		</style>
-
 	</head>
 
 	<body>
-	<div id="all-info">
-		<div id="welcome-info">
-			<h1><b>Hello, Welcome to My Website!</b></h1>
-			<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
+		<div id="all-info">
+			<div id="welcome-info">
+				<h1><b>Hello, Welcome to My Website!</b></h1>
+				<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
 
-			<ul id="self-info">
-				<li><b>School:</b> California Polytechnic State University, Pomona |</li>
-				<li><b>Major:</b> Computer Science |</li>
-				<li><b>Age:</b> 19 |</li>
-				<li><b>Email:</b> **********@gmail.com |</li>
-				<li><b>Phone:</b> (***)***-****</li>
-			</ul>
+				<ul id="self-info">
+					<li><b>School:</b> California Polytechnic State University, Pomona |</li>
+					<li><b>Major:</b> Computer Science |</li>
+					<li><b>Age:</b> 19 |</li>
+					<li><b>Email:</b> **********@gmail.com |</li>
+					<li><b>Phone:</b> (***)***-****</li>
+				</ul>
 
-			<div id="about-me" align="left"><b>About me: </b> 
-				I'm currently experimenting with many things from the CS realm to see what I am really passionate about in this field. My current knowledge of programming languages are comprised of Java, HTML, CSS, JavaScript, MIPS, (very little) Python and C#. I have tried doing many things such as Web and Game Development, App Development, but I am still trying to add variety and find my true passion in the field of computer science. 
+				<div id="about-me" align="left"><b>About me: </b> 
+					I'm currently experimenting with many things from the CS realm to see what I am really passionate about in this field. My current knowledge of programming languages are comprised of Java, HTML, CSS, JavaScript, MIPS, (very little) Python and C#. I have tried doing many things such as Web and Game Development, App Development, but I am still trying to add variety and find my true passion in the field of computer science. 
 
-				I also really like going to the gym, mostly training for hypertrophy (muscle building). Unforunately, I injured my gluteus medius by sprinting up an inclined treadmill which caused a tear in that muscle. I really hope to recover so I can start to get more into powerlifting, something that I probably enjoy the most about the gym. 
+					I also really like going to the gym, mostly training for hypertrophy (muscle building). Unforunately, I injured my gluteus medius by sprinting up an inclined treadmill which caused a tear in that muscle. I really hope to recover so I can start to get more into powerlifting, something that I probably enjoy the most about the gym. 
 
-				<em>To be continued..</em>
+					<em>To be continued..</em>
+				</div>
+			</div>
+
+			<div id="circle-buttons" style="text-align: center;">
+				<button class="button button1" onclick = "location.href = 'https://www.facebook.com/aaron.truong.10'">FaceBook</button>
+				<button class="button button2" onclick = "location.href = 'https://github.com/truongaaron'">GitHub</button>
+				<button class="button button3" onclick = "location.href = 'https://bitbucket.org/aarontruong/'">BitBucket</button>
 			</div>
 		</div>
-
-		<div id="circle-buttons" style="text-align: center;">
-			<button class="button button1" onclick = "location.href = 'https://www.facebook.com/aaron.truong.10'">FaceBook</button>
-			<button class="button button2" onclick = "location.href = 'https://github.com/truongaaron'">GitHub</button>
-			<button class="button button3" onclick = "location.href = 'https://bitbucket.org/aarontruong/'">BitBucket</button>
-		</div>
-	</div>
 	</body>
 </html>
