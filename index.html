@@ -35,6 +35,7 @@
 		}
 
 		#all-info {
+			height: 60%;
 			border-style: solid;
 		}
 
@@ -43,9 +44,17 @@
 			border-style: solid;
 		}
 
+		/* Positions the buttons vertically */
+		#circle-buttons {
+			position: relative;
+			text-align: center;
+			top: 50px;
+		}
+
 		.button {
 			background-color: #4CAF50;
 		    border: none;
+		    border-radius: 70%;
 		    color: white;
 		    padding: 20px;
 		    text-align: center;
@@ -53,9 +62,9 @@
 		    display: inline-block;
 		    font-size: 12px;
 		    margin: 4px 2px;
-		    border-radius: 70%;
 		}
 
+		/*Images not scaled, but to be added*/
 		.button1 {background-image: url();}
 		.button2 {}
 		.button3 {}
@@ -72,7 +81,7 @@
 	<body>
 	<div id="all-info">
 		<div id="welcome-info">
-			<h1><b>Hello, Welcome to My Personal Website!</b></h1>
+			<h1><b>Hello, Welcome to My Website!</b></h1>
 			<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
 
 			<ul id="self-info">
@@ -82,6 +91,14 @@
 				<li><b>Email:</b> **********@gmail.com |</li>
 				<li><b>Phone:</b> (***)***-****</li>
 			</ul>
+
+			<div id="about-me" align="left"><b>About me: </b> 
+				I'm currently experimenting with many things from the CS realm to see what I am really passionate about in this field. My current knowledge of programming languages are comprised of Java, HTML, CSS, JavaScript, MIPS, (very little) Python and C#. I have tried doing many things such as Web and Game Development, App Development, but I am still trying to add variety and find my true passion in the field of computer science. 
+
+				I also really like going to the gym, mostly training for hypertrophy (muscle building). Unforunately, I injured my gluteus medius by sprinting up an inclined treadmill which caused a tear in that muscle. I really hope to recover so I can start to get more into powerlifting which I probably enjoy the most. 
+
+				<em>To be continued..</em>
+			</div>
 		</div>
 
 		<div id="circle-buttons" style="text-align: center;">
