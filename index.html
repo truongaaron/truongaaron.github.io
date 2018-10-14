@@ -8,11 +8,39 @@
 			}
 
 			/* ul, li classes are used to line up info from a list */
-			ul {
+			#self-info {
 				text-align: center;
 			}
 
-			li {
+			/* changes margin, padding, background color of the navigation bar */
+			#navigation-bar {
+				list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: #333;
+			}
+
+			/* pushes all the info in the nav bar to the left */
+			#nav-link {
+				float: left;
+			}
+
+			/* nav bar text is turned white and padding of background is changed */
+			#nav-link a {
+				display: block;
+			    color: white;
+			    padding: 15px 136.9px;
+			    text-decoration: none;
+			}
+
+			/* hovering over a link in the nav bar will change to a certain background color */
+			#nav-link a:hover {
+ 			   background-color: #111;
+			}
+
+			/* aligns the list in a horizontal manner, removing the bullet points */
+			#self {
 				display: inline-block;
 			}
 
@@ -21,6 +49,7 @@
 			}
 
 			#all-info {
+				font-family: Arial;
 				border-style: solid;
 
 				/* fill background w/ image */
@@ -29,7 +58,7 @@
 	    		background-repeat: no-repeat;
 	    		background-size: cover;
 	    		box-sizing: border-box;
-			}
+			}	
 
 			#self-info {
 				border-style: solid;
@@ -39,9 +68,11 @@
 			/* Positions the buttons vertically */
 			#circle-buttons {
 				text-align: center;
-				top: 50px;
+				border-style: solid;
+				border-width: 1px;
 			}
 
+			/* changes the orientation of the button and style of the button */
 			.button {
 				background-color: #4CAF50;
 			    border: none;
@@ -69,23 +100,33 @@
 	<body>
 		<div id="all-info">
 			<div id="welcome-info">
+				<div>
+					<ul id="navigation-bar">
+						<li id="nav-link"><a href="default.asp">Home</a></li>
+						<li id="nav-link"><a href="news.asp">News</a></li>
+						<li id="nav-link"><a href="contact.asp">Contact</a></li>
+						<li id="nav-link"><a href="about.asp">About</a></li>
+					</ul>
+				</div>
+
 				<h1><b>Hello, Welcome to My Website!</b></h1>
-				<h2>My name is <b><em>Aaron Truong</em></b>!</h2>
+				<h2>My name is <b><em>Aaron Truong</em></b>!</h2>	
 
 				<ul id="self-info">
-					<li><b>School:</b> California Polytechnic State University, Pomona |</li>
-					<li><b>Major:</b> Computer Science |</li>
-					<li><b>Age:</b> 19 |</li>
-					<li><b>Email:</b> **********@gmail.com |</li>
-					<li><b>Phone:</b> (***)***-****</li>
+					<li id="self"><b>School:</b> California Polytechnic State University, Pomona |</li>
+					<li id="self"><b>Major:</b> Computer Science |</li>
+					<li id="self"><b>Age:</b> 19 |</li>
+					<li id="self"><b>Email:</b> **********@gmail.com |</li>
+					<li id="self"><b>Phone:</b> (***)***-****</li>
 				</ul>
 
 				<div id="about-me" align="left"><b>About me: </b> 
 					I'm currently experimenting with many things from the CS realm to see what I am really passionate about in this field. My current knowledge of programming languages are comprised of Java, HTML, CSS, JavaScript, MIPS, (very little) Python and C#. I have tried doing many things such as Web and Game Development, App Development, but I am still trying to add variety and find my true passion in the field of computer science. 
-
-					I also really like going to the gym, mostly training for hypertrophy (muscle building). Unforunately, I injured my gluteus medius by sprinting up an inclined treadmill which caused a tear in that muscle. I really hope to recover so I can start to get more into powerlifting, something that I probably enjoy the most about the gym. 
-
+					<p></p>
+					I also really like going to the gym, mostly training for hypertrophy (muscle building). Unforunately, I injured my gluteus medius by sprinting up an inclined treadmill which caused a tear in that muscle. I really hope to recover so I can start to get more into powerlifting, something that I probably enjoy the most about the gym.
+					<p></p>
 					<em>To be continued..</em>
+					<br></br>
 				</div>
 			</div>
 
